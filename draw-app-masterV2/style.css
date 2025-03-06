@@ -1,0 +1,89 @@
+html, body {
+	background-color: black;
+	margin: 0;
+  	height: 100%;
+	overflow: hidden
+  
+}
+
+#sidebar {
+	grid-area: sidebar;
+	overflow-y: hidden;
+}
+
+#content {
+	grid-area: content;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 2px 5px;
+  display: none; /* Initially hidden */
+  pointer-events: none; /* Stops the tooltip from blocking mouse events */
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 2px;
+}
+
+
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 230px  minmax(500px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px;
+		grid-template-areas:
+               "header header header"
+				"sidebar content content"
+                "colourP colourP options";
+		background-color: #000;
+		color: #444;
+	}
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 150%;
+}
+
+.header {
+  background-color: #999;
+}
