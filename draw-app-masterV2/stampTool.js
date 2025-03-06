@@ -3,17 +3,17 @@ function stampTool() {
     this.name = "Stamp";
     this.icon = "assets/stamp.png";
     // Default stamp image
-    this.image = loadImage('./assets/stamps/stamp.png'); 
+    this.image = loadImage('assets/stamps/stamp.png'); 
     this.stampSizeSlider = null;
 
     var stamps;
     var stampSize = 20;
 
     var stampImages = {
-        "Default": './assets/stamps/stamp.png',
-        "Star": './assets/stamps/star.png',
-        "Heart": './assets/stamps/heart.png',
-        "Smile": './assets/stamps/smile.png'
+        "Default": 'assets/stamps/stamp.png',
+        "Star": 'assets/stamps/star.png',
+        "Heart": 'assets/stamps/heart.png',
+        "Smile": 'assets/stamps/smile.png'
     };
     
     var dropdown; 
